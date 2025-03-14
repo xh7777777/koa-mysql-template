@@ -4,12 +4,12 @@
   "description": "a koa2 template with mysql ",
   "main": "src/main.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xh7777777/koa-mysql-template.git",
-    "dev": "nodemon"
+    "url": "git+https://github.com/xh7777777/koa-mysql-template.git"
   },
   "keywords": [
     "koa",

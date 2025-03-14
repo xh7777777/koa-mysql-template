@@ -5,7 +5,7 @@ const helloRouter = new Router({
   prefix: "/hello",
 });
 
-helloRouter.post("/register", (ctx) => {
+helloRouter.get("/", (ctx) => {
     ctx.body = "Hello World";
 });
 
