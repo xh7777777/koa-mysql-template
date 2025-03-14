@@ -1,0 +1,46 @@
+{
+  "name": "koa-mysql-template",
+  "version": "1.0.0",
+  "description": "a koa2 template with mysql ",
+  "main": "src/main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xh7777777/koa-mysql-template.git",
+    "dev": "nodemon"
+  },
+  "keywords": [
+    "koa",
+    "nodejs",
+    "mysql"
+  ],
+  "author": "xh7777777",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xh7777777/koa-mysql-template/issues"
+  },
+  "homepage": "https://github.com/xh7777777/koa-mysql-template#readme",
+  "devDependencies": {
+    "@types/koa-bouncer": "^6.0.6",
+    "@types/koa-cors": "^0.0.6",
+    "@types/koa-router": "^7.4.8",
+    "@types/koa-static": "^4.0.4",
+    "@types/node": "^20.11.17",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.4",
+    "koa": "^2.15.0",
+    "koa-body": "^6.0.1",
+    "koa-bouncer": "^6.0.4",
+    "koa-cors": "^0.0.16",
+    "koa-router": "^12.0.1",
+    "koa-static": "^5.0.0",
+    "mysql2": "^3.13.0"
+  }
+}

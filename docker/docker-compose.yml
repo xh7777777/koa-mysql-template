@@ -1,0 +1,24 @@
+
+version: "3"
+services:
+# 启动mysql
+  mysql_db:
+    container_name: mysql_db
+    restart: unless-stopped
+    image: mysql:latest
+    command: --default-authentication-plugin=mysql_native_password
+    env_file:
+      - .env
+    environment:
+      MYSQL_USER: ${DATABASE_USERNAME}
+      MYSQL_ROOT_PASSWORD: ${DATABASE_PASSWORD}
+      MYSQL_PASSWORD: ${DATABASE_PASSWORD}
+      MYSQL_DATABASE: ${DATABASE_DATABASE}
+    ports:
+      - "13306:3306"
+    volumes:
+      - data:/var/lib/mysql
+# 启动redis
+volumes:
+  data:
+
